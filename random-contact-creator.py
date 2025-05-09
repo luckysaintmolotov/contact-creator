@@ -1,4 +1,10 @@
 import random
+class contact:
+    def __init__(self,firstname,lastname,dateofbirth,):
+        self.firstname = firstname
+        self.lastname = lastname 
+        self.dateofbirth = dateofbirth
+
 class Names:
     female_names = [
         "Anya", "Darya", "Elena", "Irina", "Katya", "Lilia", "Mila", "Nadia", "Oksana", "Polina",
@@ -64,12 +70,7 @@ class Names:
     def random_fe_name(self):
         #female = Names().random_fe_name()
         return f"{random.choice(self.female_names)} {random.choice(self.last_names)}"
-    
     def random_ma_name(self):
         #male = Names().random_ma_name()
         return f"{random.choice(self.male_names)} {random.choice(self.last_names)}"
     
-    
-    
-
-print(male)
